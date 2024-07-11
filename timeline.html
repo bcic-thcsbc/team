@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BCIC Timeline</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      
+
+        <style>
+            /* General footer styles */
+            #h1h1j2 {
+                background-color: #155BD5;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                font-family: Arial, sans-serif;
+            }
+    
+            #k9p3m4 {
+                margin-bottom: 20px;
+            }
+    
+            #b2z6f8 {
+                font-size: 24px;
+                margin: 10px 0;
+            }
+    
+            #v7c4l5 {
+                font-size: 14px;
+                margin: 10px 0 20px 0;
+            }
+    
+            #a9v2j6 {
+                margin: 20px 0;
+            }
+    
+            #h5k8m1 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+    
+            #s9l8d7 {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+            }
+    
+            .r8t2y3 .fa,
+            .o6v9m2 .fa {
+                font-size: 40px; /* Increased icon size */
+                color: white; /* Set icon color to white */
+            }
+    
+            #y5u6v1 {
+                border-top: 1px solid #0044aa;
+                padding-top: 10px;
+            }
+    
+            #k5j8m2 {
+                font-size: 12px;
+            }
+    
+            /* Responsive styles */
+            @media (max-width: 768px) {
+                #s9l8d7 {
+                    flex-direction: column;
+                    align-items: center;
+                }
+    
+                .r8t2y3 .fa,
+                .o6v9m2 .fa {
+                    font-size: 35px; /* Adjusted icon size for tablets */
+                }
+            }
+    
+            @media (max-width: 480px) {
+                #b2z6f8 {
+                    font-size: 20px;
+                }
+    
+                #v7c4l5 {
+                    font-size: 12px;
+                }
+    
+                #h5k8m1 {
+                    font-size: 16px;
+                }
+    
+                .r8t2y3 .fa,
+                .o6v9m2 .fa {
+                    font-size: 30px; /* Adjusted icon size for mobiles */
+                }
+    
+                #k5j8m2 {
+                    font-size: 10px;
+                }
+            }
+        </style>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            .j1s3qw {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #155BD5;
+                padding: 10px 20px;
+                color: white;
+            }
+            .j1s3qw .a3b2c1 {
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+            .j1s3qw .k4l5m6 {
+                display: flex;
+                gap: 20px;
+            }
+            .j1s3qw .k4l5m6 .z7x8y9 {
+                color: white;
+                text-decoration: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                transition: color 0.3s;
+            }
+            .j1s3qw .k4l5m6 .z7x8y9:hover {
+                color: #ccc;
+            }
+            .j1s3qw .k4l5m6 .b1n2m3 {
+                background-color: white;
+                color: #155BD5;
+                border: 2px solid white;
+            }
+            .j1s3qw .k4l5m6 .b1n2m3:hover {
+                background-color: #155BD5;
+                color: white;
+                border: 2px solid white;
+            }
+            @media (max-width: 768px) {
+                .j1s3qw .k4l5m6 {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .j1s3qw .k4l5m6 .z7x8y9 {
+                    padding: 10px;
+                }
+            }
+        </style>
+        <style>
+            
+
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff; 
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans";
+    background: #ffffff;
+    font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+[tabindex="-1"]:focus {
+    outline: 0 !important; }
+  
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #006E6D;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.container {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+}
+
+.container.left {
+    left: 0;
+}
+
+.container.right {
+    left: 50%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 48px;
+    right: -8px;
+    background: #006E6D;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.container.right::after {
+    left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 46px;
+  right: 10px;
+  z-index: 1;
+  border: 10px solid;
+  border-color: transparent transparent transparent #006E6D;
+}
+
+.container.right::before {
+  left: 10px;
+  border-color: transparent #006E6D transparent transparent;
+}
+
+.container .date {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 48px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #006E6D;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.container.left .date {
+    right: -75px;
+}
+
+.container.right .date {
+    left: -75px;
+}
+
+.container .content {
+    padding: 30px;
+    background: #ffffff;
+    position: relative;
+    border: 1px solid #eeeeee;
+    border-right: 5px solid #006E6D;
+    border-left: 5px solid #eeeeee;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .08);
+}
+
+.container.right .content {
+    border-right: 5px solid #eeeeee;
+    border-left: 5px solid #006E6D;
+    border-radius: 0 15px 15px 0;
+}
+
+.container .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #006E6D;
+}
+
+.container .content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #454545;
+}
+
+@media (max-width: 767.98px) {
+    .timeline::after {
+        left: 90px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+    }
+    
+    .container.right {
+        left: 0%;
+    }
+
+    .container.left::after, 
+    .container.right::after {
+        left: 82px;
+    }
+    
+    .container.left::before,
+    .container.right::before {
+        left: 100px;
+        border-color: transparent #006E6D transparent transparent;
+    }
+    
+    .container.left .date,
+    .container.right .date {
+        right: auto;
+        left: 15px;
+    }
+    
+    .container.left .content,
+    .container.right .content {
+        border-right: 5px solid #eeeeee;
+        border-left: 5px solid #006E6D;
+        border-radius: 0 15px 15px 0;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="j1s3qw">
+            <a href="https://bcic.edu.vn" class="a3b2c1" target="_blank">BCIC</a>
+            <div class="k4l5m6">
+                <a href="https://www.facebook.com/bcic.thcsbc" class="z7x8y9" target="_blank">Facebook Fanpage</a>
+                <a href="https://bcic.edu.vn" class="z7x8y9 b1n2m3" target="_blank">Members</a>
+                <a href="https://oj.bcic.edu.vn" class="z7x8y9 b1n2m3" target="_blank">BCOJ</a>
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="container left">
+                <div class="date">16/07/24</div>
+                <div class="content">
+                    <h2>Ra mắt</h2>
+                    <p>
+                        Ra mắt BCOJ – Binh Chuan Online Judge – hệ thống làm bài, chấm bài tự động, tổ chức thi trực tuyến tại oj.bcic.edu.vn
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">15/07/24</div>
+                <div class="content">
+                    <h2>Ra mắt</h2>
+                    <p>
+                        Ra mắt BCIC Information Website tại bcic.edu.vn và BCIC Timeline tại bcic.edu.vn/timeline.html
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">08/07/24</div>
+                <div class="content">
+                    <h2>Sở hữu</h2>
+                    <p>
+                        Chính thức sở hữu tên miền bcic.edu.vn
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">30/06/24</div>
+                <div class="content">
+                    <h2>Ra mắt</h2>
+                    <p>
+                        Xây dựng Server Discord, chính thức 100% hoạt động qua Discord.
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">04/06/24</div>
+                <div class="content">
+                    <h2>Thi đấu</h2>
+                    <p>
+                        Tham gia Hội thi Tin Học Trẻ tỉnh Bình Dương lần thứ XXVIII. Thành tích đạt giải 100%, có 3 thành viên tham dự Hội thi Tin Học Trẻ toàn quốc vòng khu vực.
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">01/06/24</div>
+                <div class="content">
+                    <h2>Thay đổi</h2>
+                    <p>
+                        Lê Thành Đạt trở thành hỗ trợ viên của BCIC.
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">31/05/24</div>
+                <div class="content">
+                    <h2>Tạm biệt</h2>
+                    <p>
+                        Các thành viên Đồng Phú Mỹ, Trần Nguyễn Gia Hân, Nguyễn Hoàng Thông rời BCIC.
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">28/05/24</div>
+                <div class="content">
+                    <h2>Gia nhập</h2>
+                    <p>
+                        Lưu Võ Xuân Trường gia nhập BCIC - tổ toán tin (là thành viên cuối cùng của GEN 1.0)
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">20/05/24</div>
+                <div class="content">
+                    <h2>Thi đấu</h2>
+                    <p>
+                        Tham gia cuộc thi Tin Học Trẻ cấp Thành Phố. Thành tích đạt giải 75%, đạt giải Nhất toàn đoàn, có 3 thành viên tham dự hội thi Tin Học Trẻ tỉnh Bình Dương lần thứ XXVIII.
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">14/04/24</div>
+                <div class="content">
+                    <h2>Gia nhập</h2>
+                    <p>
+                        Trần Vũ Hoàng Nam gia nhập BCIC - tổ toán tin.
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">20/03/24</div>
+                <div class="content">
+                    <h2>Ra mắt</h2>
+                    <p>
+                        Ứng dụng công nghệ NFC – ra mắt thẻ cá nhân của thành viên liên kết với Biolink.
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">16/03/24</div>
+                <div class="content">
+                    <h2>Thi đấu</h2>
+                    <p>
+                        Tham gia cuộc thi đầu tiên – học sinh giỏi tin học cấp tỉnh. Thành tích đạt được 1 giải Khuyến Khích.
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">08/02/24</div>
+                <div class="content">
+                    <h2>Gia nhập</h2>
+                    <p>
+                        Nguyễn Minh Nhật gia nhập BCIC - tổ sản phẩm sáng tạo.
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">10/01/24</div>
+                <div class="content">
+                    <h2>Gia nhập</h2>
+                    <p>
+                        Lâm Nhật Hào, Nguyễn Hoàng Thông, Trịnh Ngọc Trường gia nhập BCIC – tổ toán tin.
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">15/12/23</div>
+                <div class="content">
+                    <h2>Gia nhập</h2>
+                    <p>
+                        Trần Nguyễn Gia Hân, Đồng Phú Mỹ gia nhập BCIC – tổ thiết kế, nội dung. Xây dựng Fanpage CLB tại facebook.com/bcic.thcsbc
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">02/12/23</div>
+                <div class="content">
+                    <h2>Thành lập</h2>
+                    <p>
+                        Thành lập BCIC với 3 thành viên: Đặng Ngọc Trường, Lê Thành Đạt, Nguyễn Lê Tấn. Đặng Ngọc Trường quản lý tổ sản phẩm sáng tạo và nội dung, thiết kế. Nguyễn Lê Tấn, Lê Thành Đạt quản lý tổ toán tin.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <footer id="h1h1j2" class="f8d9k0">
+            <div id="k9p3m4" class="x2y5w1">
+                <h2 id="b2z6f8" class="t3d7v4">BCIC</h2>
+                <p id="m3k6n9" class="v7c4l5">
+                    Binh Chuan Information Technology Club
+                </p>
+                <div id="p4d6b7" class="a9v2j6">
+                    <h3 id="h5k8m1" class="u3z7f2">Theo dõi chúng tớ tại</h3>
+                    <div id="i6j2p4" class="s9l8d7">
+                        <a id="c7b4n1" class="r8t2y3" href="https://www.facebook.com/bcic.thcsbc" target="_blank"><i class="fab fa-facebook-f" style="color: #ffffff;"></i></a>
+                        <a id="j2p5n3" class="o6v9m2" href="#" target="_blank"><i class="fab fa-instagram"  style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="l3n2p8" class="y5u6v1">
+                <p id="k5j8m2" class="z4w2x3">Copyright © 2024 BCIC. All Rights Reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>

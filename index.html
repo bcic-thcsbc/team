@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCIC Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #155BD5;
+            padding: 10px 20px;
+            color: white;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: color 0.3s;
+        }
+        .navbar .menu a:hover {
+            color: #ccc;
+        }
+        .navbar .menu .special {
+            background-color: white;
+            color: #155BD5;
+            border: 2px solid white;
+        }
+        .navbar .menu .special:hover {
+            background-color: #155BD5;
+            color: white;
+            border: 2px solid white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .member-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+        .member-card:hover {
+            transform: scale(1.02);
+        }
+        .member-card img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+        .member-card h3 {
+            margin: 10px 0 5px;
+        }
+        .member-card p {
+            color: #555;
+            margin: 5px 0;
+        }
+        .member-card a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            text-decoration: none;
+            color: inherit;
+        }
+        @media (max-width: 768px) {
+            .navbar .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .navbar .menu a {
+                padding: 10px;
+            }
+        }
+    </style>
+    <style>
+            /* General footer styles */
+            #h1h1j2 {
+                background-color: #155BD5;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                font-family: Arial, sans-serif;
+            }
+    
+            #k9p3m4 {
+                margin-bottom: 20px;
+            }
+    
+            #b2z6f8 {
+                font-size: 24px;
+                margin: 10px 0;
+            }
+    
+            #v7c4l5 {
+                font-size: 14px;
+                margin: 10px 0 20px 0;
+            }
+    
+            #a9v2j6 {
+                margin: 20px 0;
+            }
+    
+            #h5k8m1 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+    
+            #s9l8d7 {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+            }
+    
+            .r8t2y3 .fa,
+            .o6v9m2 .fa {
+                font-size: 40px; /* Increased icon size */
+                color: white; /* Set icon color to white */
+            }
+
+    
+            #y5u6v1 {
+                border-top: 1px solid #0044aa;
+                padding-top: 10px;
+            }
+    
+            #k5j8m2 {
+                font-size: 12px;
+            }
+    
+            /* Responsive styles */
+            @media (max-width: 768px) {
+                #s9l8d7 {
+                    flex-direction: column;
+                    align-items: center;
+                }
+    
+                .r8t2y3 .fa,
+                .o6v9m2 .fa {
+                    font-size: 35px; /* Adjusted icon size for tablets */
+                }
+            }
+    
+            @media (max-width: 480px) {
+                #b2z6f8 {
+                    font-size: 20px;
+                }
+    
+                #v7c4l5 {
+                    font-size: 12px;
+                }
+    
+                #h5k8m1 {
+                    font-size: 16px;
+                }
+    
+                .r8t2y3 .fa,
+                .o6v9m2 .fa {
+                    font-size: 30px; /* Adjusted icon size for mobiles */
+                }
+    
+                #k5j8m2 {
+                    font-size: 10px;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://bcic.edu.vn" class="logo" target="_blank">BCIC</a>
+        <div class="menu">
+            <a href="https://facebook.com/bcic.thcsbc" target="_blank">Facebook Fanpage</a>
+            <a href="timeline.html" class="special" target="_blank">Timeline</a>
+            <a href="https://oj.bcic.edu.vn" class="special" target="_blank">BCOJ</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">Thành viên BCIC</div>
+        <div class="members">
+            <div class="member-card">
+                <a href="htttps://beacons.ai/ngtruongg" target="_blank"></a>
+                <img src="img/DNT_PIC.jpg" alt="Đặng Ngọc Trường">
+                <h3>Đặng Ngọc Trường</h3>
+                <p>Sáng lập - Chủ nhiệm GEN 1.0</p>
+                <p>truongdn@bcic.edu.vn</p>
+            </div>
+            <div class="member-card">
+                <a href="https://beacons.ai/sadgau" target="_blank"></a>
+                <img src="img/TAN_PIC.jpg" alt="Nguyễn Lê Tấn">
+                <h3>Nguyễn Lê Tấn</h3>
+                <p>Đồng sáng lập - Thành viên GEN 1.0</p>
+                <p>tannl@bcic.edu.vn</p>
+            </div>
+            <div class="member-card">
+                <a href="https://beacons.ai/thdattt" target="_blank"></a>
+                <img src="img/DAT_PIC.jpg" alt="Lê Thành Đạt">
+                <h3>Lê Thành Đạt</h3>
+                <p>Đồng sáng lập - Thành viên GEN 1.0 - Hỗ trợ viên</p>
+                <p>datlt@bcic.edu.vn</p>
+            </div>
+            <div class="member-card">
+                <a href="https://www.facebook.com/profile.php?id=100049862781070" target="_blank"></a>
+                <img src="img/PMY_PIC.jpg" alt="Đồng Phú Mỹ">
+                <h3>Đồng Phú Mỹ</h3>
+                <p>Content Writter GEN 1.0</p>
+                <p>mydp@bcic.edu.vn</p>
+            </div>
+            <div class="member-card">
+                <a href="https://www.facebook.com/profile.php?id=61556375930562" target="_blank"></a>
+                <img src="img/NOT.png" alt="Trần Nguyễn Gia Hân">
+                <h3>Trần Nguyễn Gia Hân</h3>
+                <p>Designer GEN 1.0</p>
+                <p>hantng@bcic.edu.vn</p>
+            </div>
+            <div class="member-card">
+                <a href="https://www.facebook.com/profile.php?id=100081863196884" target="_blank"></a>
+                <img src="img/NOT.png" alt="Nguyễn Hoàng Thông">
+                <h3>Nguyễn Hoàng Thông</h3>
+                <p>Thành viên GEN 1.0</p>
+                <p>thongnh@bcic.edu.vn</p>
+            </div>
+            
+            <div class="member-card">
+                <a href="https://www.facebook.com/nhathao.lam.7370" target="_blank"></a>
+                <img src="img/HAO_PIC.jpg" alt="Lâm Nhật Hào">
+                <h3>Lâm Nhật Hào</h3>
+                <p>Thành viên GEN 1.0</p>
+                <p>haoln@bcic.edu.vn</p>
+            </div>
+            <div class="member-card">
+                <a href="https://www.facebook.com/profile.php?id=100091435440124" target="_blank"></a>
+                <img src="https://via.placeholder.com/300x200" alt="Nguyễn Minh Nhật">
+                <h3>Nguyễn Minh Nhật</h3>
+                <p>Thành viên GEN 1.0</p>
+                <p>nhatnm@bcic.edu.vn</p>
+            </div>
+            <div class="member-card">
+                <a href="https://www.facebook.com/School.2305/" target="_blank"></a>
+                <img src="img/NTRUONG_PIC.jpg" alt="Trịnh Ngọc Trường">
+                <h3>Trịnh Ngọc Trường</h3>
+                <p>Thành viên GEN 1.0</p>
+                <p>truongtn@bcic.edu.vn</p>
+            </div>
+            <div class="member-card">
+                <a href="https://www.facebook.com/huong.khong.180410" target="_blank"></a>
+                <img src="img/NAM_PIC.jpg" alt="Trần Vũ Hoàng Nam">
+                <h3>Trần Vũ Hoàng Nam</h3>
+                <p>Thành viên GEN 1.0</p>
+                <p>namtvh@bcic.edu.vn</p>
+            </div>          
+            <div class="member-card">
+                <a href="https://www.facebook.com/anhthuong.luu.1" target="_blank"></a>
+                <img src="img/XTRUONG_PIC.jpg" alt="Lưu Võ Xuân Trường">
+                <h3>Lưu Võ Xuân Trường</h3>
+                <p>Thành viên GEN 1.0</p>
+                <p>truonglvx@bcic.edu.vn</p>
+            </div>
+        </div>
+    </div>
+    <footer id="h1h1j2" class="f8d9k0">
+        <div id="k9p3m4" class="x2y5w1">
+            <h2 id="b2z6f8" class="t3d7v4">BCIC</h2>
+            <p id="m3k6n9" class="v7c4l5">
+                Binh Chuan Information Technology Club
+            </p>
+            <div id="p4d6b7" class="a9v2j6">
+                <h3 id="h5k8m1" class="u3z7f2">Theo dõi chúng tớ tại</h3>
+                <div id="i6j2p4" class="s9l8d7">
+                    <a id="c7b4n1" class="r8t2y3" href="https://www.facebook.com/bcic.thcsbc" target="_blank"><i class="fab fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a id="j2p5n3" class="o6v9m2" href="#" target="_blank"><i class="fab fa-instagram"  style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="l3n2p8" class="y5u6v1">
+            <p id="k5j8m2" class="z4w2x3">Copyright © 2024 BCIC. All Rights Reserved</p>
+        </div>
+    </footer>
+    
+     
+</body>
+</html>
